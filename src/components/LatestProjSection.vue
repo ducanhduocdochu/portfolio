@@ -3,19 +3,19 @@
         <div class="px-4 xl:pl-16">
             <div class="mb-4 md:flex md:justify-between xl:pr-16">
                 <h2 class="text-4xl font-bold text-white"> My Latest Projects</h2>
-                <div class="flex space-x-4 mb-4 mt-5 md:mt-0">
+                <!-- <div class="flex space-x-4 mb-4 mt-5 md:mt-0">
                     <button class="hover:text-primary" v-for="category in ['all', 'web development', 'Mobile App']"
                         :key="category" @click="() => selectedCategory = category">
                         {{ category }}
                     </button>
-                </div>
+                </div> -->
             </div>
             <ul class="px-4 sm:py-16 xl:pr-16 grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
                 data-aos="fade-right">
                 <div v-for="project in filteredProjects" :key="project.id">
                     <div class="h-52 md:h-[24rem] rounded-t-xl relative group"
                     :style="{ backgroundImage: 'url(' + project.image + ')', backgroundSize: 'cover' }">                    
-                    <div class="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0
+                    <div class="h-52 overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0
                     hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500
                     ">
                         <a class="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
@@ -26,7 +26,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5">
                                 </path>
-                            </svg></a><a
+                            </svg></a>
+                            <!-- <a
                             class="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
                             :href="project.gitURL"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"
@@ -37,7 +38,7 @@
                                 </path>
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
-                            </svg></a>
+                            </svg></a> -->
                     </div>
                 </div>
                 <div class="text-white rounded-b-xl mt-3 bg-[#111a3e] shadow-lg border border-[#1f1641] py-6 px-4">
@@ -64,62 +65,42 @@ const Projects = ref([
         id: 1,
         category: 'web development',
         image: 'src/assets/project.png',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
-        gitURL: '',
-        webURL: ''
+        title: 'Ecommerce Microservice',
+        description: "Built a scalable API eCommerce platform with microservices: Identity, Product, Cart with Java Spring, Discount with NestJS, Scheduled Discount with ExpressJS, Order with Jin, Payment with .Net Core,... Communicate by Redis Stream by Redis, grpc, Restful Api, message queue by RabbitMQ. All service has coverage point > 93%, write Unit Tests, Isolation Tests, docs/docs-json API, docs API Postman.",
+        technologies: ['Java Spring Boot', 'NestJs, ExpressJs', '.Net Core', 'Gin', 'MongoDB', 'MySQL', 'Redis', 'RabbitMQ'],
+        // gitURL: 'https://github.com/ducanhduocdochu/e-commercee',
+        webURL: 'https://github.com/ducanhduocdochu/e-commercee'
     },
     {
         id: 2,
-        category: 'Mobile App',
-        image: 'src/assets/mobile.jpg',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
-        gitURL: '',
-        webURL: ''
+        category: 'web development',
+        image: 'src/assets/project.png',
+        title: 'Set up CICD, Monitoring',
+        description: 'Developed and implemented CI/CD pipelines for automated software deployment using GitHub Actions, GitLab CI/CD, and Jenkins. Integrated Docker, Git, and DockerHub for efficient containerization and version control. Designed and deployed monitoring systems with Prometheus and Grafana to track real-time system performance and metrics. Built and deployed API-based applications, optimizing DevOps workflows.',
+        technologies: ['Github Action', 'Gitlab', 'Jenkins', 'Docker', 'Prometheus', 'Grafana'],
+        // gitURL: 'https://github.com/ducanhduocdochu/setup_cicd_monitoring',
+        webURL: 'https://github.com/ducanhduocdochu/setup_cicd_monitoring'
     },
     {
         id: 3,
         category: 'web development',
         image: 'src/assets/project.png',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
-        gitURL: '',
-        webURL: ''
+        title: 'Fullstack Development for a Social Networking Website',
+        description: 'Designed and implemented a microservices architecture, consisting of: Auth-server: Provides APIs for authentication and authorization. Backend-server: Manages APIs for users, posts, comments, likes, shares, follows, friendships, and notifications.Web-socket-server: Handles real-time notifications using RabbitMQ and WebSocket.',
+        technologies: ['Discord Server', 'MongoDB', 'PostgreSQL', 'Redis', 'React', 'Redux', 'TailwindCSS', 'Web socket'],
+        // gitURL: 'https://github.com/ducanhduocdochu/social',
+        webURL: 'https://github.com/ducanhduocdochu/social'
     },
     {
         id: 4,
-        category: 'Mobile App',
-        image: 'src/assets/mobile.jpg',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
-        gitURL: '',
-        webURL: ''
-    },
-    {
-        id: 5,
         category: 'web development',
         image: 'src/assets/project.png',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
-        gitURL: '',
-        webURL: ''
+        title: 'Fullstack Development - Cloning the Dev.to Website',
+        description: 'Developed a fullstack clone of the Dev.to website using the T3 stack, including: Frontend & Backend: Built with Next.js, authentication handled via NextAuth. API Communication: Integrated tRPC for seamless frontend-backend communication. Deployment: Hosted on Vercel, including database deployment. Image Storage: Utilized AWS and Cloudinary for media storage. Styling: Designed with Tailwind CSS for a modern and responsive UI. ',technologies: ['NextJS', 'TypeScript', 'Cloudinary', 'TailwindCSS', 'NextAuth', 'Vercel', 'tRPC'],
+        // gitURL: 'https://github.com/ducanhduocdochu/dev.to',
+        webURL: 'https://github.com/ducanhduocdochu/dev.to'
     },
-    {
-        id: 6,
-        category: 'Mobile App',
-        image: 'src/assets/mobile.jpg',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
-        gitURL: '',
-        webURL: ''
-    }
+    
 ]);
 
 const selectedCategory = ref('all');

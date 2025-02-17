@@ -1,6 +1,6 @@
 <template>
     <header class="flex justify-between items-center p-6 bg-opacity-50 relative z-20 ">
-        <div class="text-white text-3xl font-bold">LOGO</div>
+        <div class="text-white text-3xl font-bold">Portfolio by VueJS</div>
         <!-- Mobile Toggle Button -->
          <div class="md:hidden z-30">
          <button type="button" 
@@ -37,11 +37,11 @@
 <script setup>
 import { ref } from 'vue';
 const Menu =ref([
-    {name:'Services',href:'#services'},
+    // {name:'Services',href:'#services'},
     {name:'About Me',href:'#about'},
     {name:'Skills',href:'#skills'},
     {name:'Projects',href:'#projects'},
-    {name:'Testimonials',href:'#testimonials'},
+    // {name:'Testimonials',href:'#testimonials'},
     {name:'Contact',href:'#contact'},
 ]);
 

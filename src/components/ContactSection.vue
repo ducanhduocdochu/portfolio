@@ -3,11 +3,7 @@
         <h2 class="text-4xl font-bold text-white text-left mb-4 px-4 xl:pl-16">Let's Connect</h2>
         <div class="grid md:grid-cols-2 gap-4 relative px-4 xl:px-16 mt-8" data-aos="zoom-in-up">
             <div>
-                <p class="text-[#adb7be]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta alias
-                    quibusdam officia at,
-                    a quis cumque ea aperiam omnis minima quam. Modi necessitatibus odit corporis at dolorem quae iusto
-                    aliquam?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, porro!
+                <p class="text-[#adb7be]">I'm always open to new opportunities and collaborations. Feel free to reach out to me for any exciting projects or discussions. Let's create something great together! 🚀
                 </p>
                 <div class="col-lg-4 col-md-4 mb-lg-0 mt-5">
                     <div class="flex mb-10 items-center">
@@ -18,7 +14,7 @@
                         </div>
                         <div class="ml-5 text-white">
                             <h4>Email</h4>
-                            <p>xxxxxxx@gmail.com</p>
+                            <p>tducanh263@gmail.com</p>
                         </div>
                     </div>
                     <div class="flex mb-10 items-center">
@@ -29,19 +25,19 @@
                         </div>
                         <div class="ml-5 text-white">
                             <h4>Phone</h4>
-                            <p>+xxxxxxxxxx</p>
+                            <p>0842515966</p>
                         </div>
                     </div>
                     <div class="flex mb-10 items-center">
                         <div class="p-2"
                             style="background: #111a3e; width: 50px;height: 46px; display: flex;justify-content: center; border-radius: 50%;
                         overflow: hidden;border: 1px solid#111a3e;backdrop-filter: blur(9px);-webkit-backdrop-filter: blur(9px);">
-                            <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="linkedin"
+                            <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook.png" alt="linkedin"
                                 class="w-6">
                         </div>
                         <div class="ml-5 text-white">
-                            <h4>LinkedIn</h4>
-                            <p>wwww.LinkedIn.com</p>
+                            <h4>Facebook</h4>
+                            <p>https://www.facebook.com/ducanhduocdochu</p>
                         </div>
                     </div>
                 </div>
@@ -51,14 +47,14 @@
             overflow: hidden;border: 1px solid #111a3e;backdrop-filter: blur(9px);-webkit-backdrop-filter: blur(9px);">
             <form class="flex flex-col p-2" data-aos="zoom-in-up" >
                 <div class="mb-6">
-                    <label for="email" class="text-white block mb-2 text-sm font-medium">email</label>
+                    <label for="email" class="text-white block mb-2 text-sm font-medium">Email</label>
                     <input type="email" id="email" class="bg-[#111827] placeholder:[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                    placeholder="email@gmail.com" name="email">
+                    placeholder="Email@gmail.com" name="email">
                 </div>
                 <div class="mb-6">
                     <label for="subject" class="text-white block mb-2 text-sm font-medium">Subject</label>
                     <input type="subject" id="subject" class="bg-[#111827] placeholder:[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                    placeholder="subject" name="subject">
+                    placeholder="Subject" name="subject">
                 </div>
                 <div class="mb-6">
                     <label for="message" class="text-white block mb-2 text-sm font-medium">Message</label>

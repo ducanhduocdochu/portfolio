@@ -50,38 +50,37 @@ import { ref } from 'vue';
 const Skills =ref([
     {
         id:1,
-        name:'HTmL & CSS',
-        width:'85%'
+        name:'Javascript, Python, C#, Java, Golang (Programing Language)',
+        // width:'65%'
     },
     {
         id:2,
-        name:'Python',
-        width:'70%'
+        name:'Html, Css, Javascript, Bootstrap, Tailwindcss, ReactJS, ReduxJS, NextJS (Frontend)',
+        // width:'70%'
     },
     {
         id:3,
-        name:'JavaScript',
-        width:'98%'
+        name:'RESTful APIs, NodeJS, Mongoose, ExpressJS, NestJS, Java Spring Boot, .Net Core, Gin (Backend)',
+        // width:'80%'
     },
     {
         id:4,
-        name:'figma',
-        width:'91%'
+        name:'MySQL, PostgreSQL, Mongodb, Redis, Cloudinary, S3 AWS, Digital Ocean (Database)',
+        // width:'70%'
+    },
+    {
+        id:5,
+        name:'Linux, Docker, Github, Github Action, Gitlab, Jenkins, DockerHub (Devops)',
+        // width:'60%'
     },
 ]);
 
 const Experinces =ref([
     {
         id:1,
-        role:'Software Engineer',
-        company:'Microsoft',
-        date:'Mar 2023 - September 2024'
-    },
-    {
-        id:2,
-        role:'Frontend Developer',
-        company:'Spotify',
-        date:'Mar 2022 - September 2023'
+        role:'Web Developer',
+        company:'Udata Company',
+        date:'July 2024 - January 2025'
     },
 ])
 </script>
